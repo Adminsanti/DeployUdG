@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>Create Change</action_name>
+        <action_name>Create Change for Deploy Item</action_name>
         <active>true</active>
         <client>false</client>
-        <comments/>
-        <condition>current.ci !='' &amp;&amp; current.change ==''</condition>
+        <comments>- Cal que existeixi un ci&#13;
+- Cal que no 's'hagi creat el canvi abans</comments>
+        <condition>current.cmdb_ci !='' &amp;&amp; current.change ==''</condition>
         <form_action>true</form_action>
         <form_button>false</form_button>
         <form_context_menu>false</form_context_menu>
@@ -16,18 +17,18 @@
         <list_button>false</list_button>
         <list_choice>true</list_choice>
         <list_context_menu>true</list_context_menu>
-        <list_link>true</list_link>
+        <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <name>Create Change</name>
         <onclick/>
         <order>100</order>
         <script><![CDATA[var gr = new GlideRecord('change_request');
 gr.initialize();
-gr.short_description = "Desplegament "+ current.deployment.deployment_name ;
+gr.short_description = current.campaign + '-'+ current.cmdb_ci.name ;
 gr.type="standard";
 gr.state="ready";
-gr.assignment_group=current.deployment.deployer_group;
-gr.assignment=current.deployment.deployer_user;
+gr.assignment_group=current.campaign.deployer_group;
+gr.assignment=current.campaign.deployer_user;
 gr.cmdb_ci=current.cmdb_ci;
 gr.parent=current.sys_id;
 
@@ -36,7 +37,7 @@ gr.parent=current.sys_id;
 gr.insert();
 current.change=gr.sys_id;
 current.update();]]></script>
-        <show_insert>true</show_insert>
+        <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
         <show_update>true</show_update>
@@ -47,7 +48,7 @@ current.update();]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6157c3b9dbd3cb409fd1f57eaf9619c8</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>Create Change</sys_name>
         <sys_overrides/>
         <sys_package display_value="Deploy UdG" source="x_udg_deploy">d1e472f837b243001acdf01643990e91</sys_package>
@@ -56,7 +57,7 @@ current.update();]]></script>
         <sys_scope display_value="Deploy UdG">d1e472f837b243001acdf01643990e91</sys_scope>
         <sys_update_name>sys_ui_action_6157c3b9dbd3cb409fd1f57eaf9619c8</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-01-09 10:26:09</sys_updated_on>
+        <sys_updated_on>2018-01-25 12:14:04</sys_updated_on>
         <table>x_udg_deploy_item</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

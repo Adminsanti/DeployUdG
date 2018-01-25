@@ -29,8 +29,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9f2772b437f243001acdf01643990e74</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Deploy Campains</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Deploy Campaigns</sys_name>
         <sys_overrides/>
         <sys_package display_value="Deploy UdG" source="x_udg_deploy">d1e472f837b243001acdf01643990e91</sys_package>
         <sys_policy/>
@@ -38,9 +38,9 @@
         <sys_scope display_value="Deploy UdG">d1e472f837b243001acdf01643990e91</sys_scope>
         <sys_update_name>sys_app_module_9f2772b437f243001acdf01643990e74</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-01-08 09:12:11</sys_updated_on>
+        <sys_updated_on>2018-01-25 11:26:34</sys_updated_on>
         <timeline_page/>
-        <title>Deploy Campains</title>
+        <title>Deploy Campaigns</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

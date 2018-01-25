@@ -3,7 +3,7 @@
     <sys_properties_category_m2m action="INSERT_OR_UPDATE">
         <category display_value="Deploy">d48f9739db17cb409fd1f57eaf961909</category>
         <order>100</order>
-        <property display_value="x_udg_deploy.Current Campain" name="x_udg_deploy.Current Campain">d3bf1b39db17cb409fd1f57eaf961985</property>
+        <property display_value="x_udg_deploy.CurrentCampaign" name="x_udg_deploy.CurrentCampaign">d3bf1b39db17cb409fd1f57eaf961985</property>
         <sys_class_name>sys_properties_category_m2m</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2017-12-28 18:25:36</sys_created_on>
