@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Deploy Campain" max_length="40" name="x_udg_deploy_deployment" type="collection">
+        <element label="Deployer Group" mandatory="true" max_length="32" name="deployer_group" reference="sys_user_group" type="reference"/>
+        <element label="Deployer Name" max_length="60" name="deployer_name" type="string"/>
+        <element dependent="deployer_group" dependent_on_field="deployer_group" label="Deployer User" max_length="32" name="deployer_user" reference="sys_user" type="reference" use_dependent_field="true"/>
+        <element display="true" label="Deploy Campain" max_length="40" name="deployment_name" type="string"/>
+        <index name="index">
+            <element name="deployer_group"/>
+        </index>
+        <index name="index2">
+            <element name="deployer_user"/>
+        </index>
+    </element>
+</database>

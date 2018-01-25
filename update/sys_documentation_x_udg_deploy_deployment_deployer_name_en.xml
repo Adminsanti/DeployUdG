@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="deployer_name" label="Deployer Name" language="en" table="x_udg_deploy_deployment">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>deployer_name</element>
+            <help/>
+            <hint/>
+            <label>Deployer Name</label>
+            <language>en</language>
+            <name>x_udg_deploy_deployment</name>
+            <plural>Deployer Names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2017-11-30 16:35:07</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>1b1a7ef437f243001acdf01643990e98</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Deployer Name</sys_name>
+            <sys_package display_value="Deploy UdG" source="x_udg_deploy">d1e472f837b243001acdf01643990e91</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Deploy UdG">d1e472f837b243001acdf01643990e91</sys_scope>
+            <sys_update_name>sys_documentation_x_udg_deploy_deployment_deployer_name_en</sys_update_name>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2017-11-30 16:35:07</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

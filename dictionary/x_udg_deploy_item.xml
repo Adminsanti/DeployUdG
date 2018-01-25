@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="Deploy Item" max_length="40" name="x_udg_deploy_item" type="collection">
+        <element default="javascript:gs.getProperty('x_udg_deploy.Current Campain');" label="Campain" max_length="32" name="campain" reference="x_udg_deploy_deployment" type="reference"/>
+        <element label="Change" max_length="32" name="change" read_only="true" reference="change_request" type="reference"/>
+        <element label="Request" max_length="32" name="request" read_only="true" reference="sc_request" type="reference"/>
+        <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+    </element>
+</database>
